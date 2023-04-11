@@ -59,7 +59,9 @@ def get_google_provider_cfg():
 google_provider_cfg = get_google_provider_cfg()
 token_endpoint = google_provider_cfg["token_endpoint"]
 
+##########
 # Routes #
+##########
 @app.route("/")
 def index():
     if current_user.is_authenticated:
