@@ -94,3 +94,7 @@ def callback():
     # Get authorization code Google sent back to you
     code = request.args.get("code")
 
+print(os.environ["GOOGLE_CLIENT_ID"])
+
+if __name__ == "__main__":
+    app.run(ssl_context="adhoc")
